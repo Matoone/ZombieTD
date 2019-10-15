@@ -1,6 +1,6 @@
 let canvas;
 let ctx;
-
+const FUU = 3;
 let wavesConfig;
 
 let gameTime = 0;
