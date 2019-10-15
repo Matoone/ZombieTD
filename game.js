@@ -1,6 +1,8 @@
 let canvas;
 let ctx;
 const FUU = 3;
+
+const BLA = 14;
 let wavesConfig;
 
 let gameTime = 0;
