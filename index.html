@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kill Thoses Zombies !</title>
+        <meta charset="utf-8">
+        <style>canvas {background: whitesmoke; border: 5px black}
+        button{height: 30px; width: 100px}
+        
+        </style>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="init();">
+        <script src="game.js"></script>
+        
+        <div id="playingMenu"> <button id="buildTowerButton" type="button" class="playingMenuButton" style="display: none" onclick="toggleBuildTowerMenu()">Build Tower</button>
+        <div id="buildTowerMenu"><button type="button" style="display: none"  class="buildTowerMenuButton" onclick='placeTower("machinegun");' id="machinegunButton">Machinegun</button><button type="button" style="display: none" class="buildTowerMenuButton" onclick='placeTower("diamond");' id="diamondButton">Diamond</button > <button type="button" style="display: none" class="buildTowerMenuButton" onclick='placeTower("missileLauncher");' id="missileLauncherButton">Missile Launcher</button> <button type="button" style="display: none" class="buildTowerMenuButton" onclick='placeTower("slow");' id="slowButton">Slow</button> <button type="button" style="display: none" class="buildTowerMenuButton" onclick='placeTower("tesla");' id="teslaButton">Tesla</button></div></div>
+        <div id="towersHud"><button id="upgradeButton" type="button" style="display: none" onclick="upgradeSelectedTowers();">Upgrade</button> <button id="sellButton" type="button" style="display: none" onclick="sellSelectedTowers();">Sell</button></div>
+        <div id="hudCenter"> <label> </label><p id="actualWave"></p><label > </label><p id="time"></p></div>
+            
+            <div id="hudSides"> <label></label> <p id="hp"></p> <label></label><p id="money"></p> </div>
+            <div > <button id="gameSpeed" type="button" style="display: none" onclick="toggleGameSpeed();">Gamespeed</button></div>
+            <canvas id="myCanvas" width="1280" height="1280" ></canvas>
+        <div id="menu"> <label class="menuButton">Build Map : </label>  <button class="menuButton" id="buildMapButton" type="button" onclick="currentMap.buildMap()">GO!</button > <button id="saveMapButton" onclick="currentMap.saveMap();">Save Map</button> <button id="loadMapButton" onclick="currentMap.loadMap();">Load Map</button></div>
+        
+
+        
+        
+    
+    </body>
+</html>

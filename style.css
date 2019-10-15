@@ -1,0 +1,192 @@
+#playingMenu
+{
+    display: flex;
+    justify-content: space-evenly;
+
+    position: -webkit-sticky;
+    position: sticky;
+    
+    top: 75%;
+    width: 50%;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#buildTowerButton
+{
+    margin: auto;
+    
+    font-size: 18px;
+    border: 2px solid #AD235E;
+    border-radius: 100px;
+    background: #92c7eb;
+    
+    
+
+    background-size: contain;
+     background-position: center;
+    display: inline-block;
+     border: none;
+      padding: 20px;
+       width: 70px;
+        border-radius: 900px;
+         height: 70px;
+          transition: all 0.5s;
+           cursor: pointer;
+           background-repeat: no-repeat;
+}
+
+#buildTowerMenu
+{
+    
+    display: flex;
+    justify-content: space-evenly;
+
+    position: -webkit-sticky;
+    position: sticky;
+    
+    top: 0%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#buildTowerMenu button
+{
+    margin: auto;
+    
+    font-size: 18px;
+    border: 2px solid #AD235E;
+    border-radius: 100px;
+    background: #92c7eb;
+    
+    
+
+    background-size: contain;
+     background-position: center;
+    display: inline-block;
+     border: none;
+      padding: 20px;
+       width: 70px;
+        border-radius: 900px;
+         height: 70px;
+         /* transition: all 0.5s; */
+           cursor: pointer;
+           background-repeat: no-repeat;
+
+    
+}
+
+#buildTowerMenu #machinegunButton
+{
+    background-image: url("images/towers/basic/tower_machinegun_0_blue.png");
+}
+
+#buildTowerMenu #diamondButton
+{
+    background-image: url("images/towers/diamond/diamond_blue.png");
+}
+
+#buildTowerMenu #slowButton
+{
+    background-image: url("images/towers/slow/slow_blue.png");
+}
+
+#buildTowerMenu #missileLauncherButton
+{
+    background-image: url("images/towers/missileLauncher/missile_launcher_blue.png");
+}
+
+#buildTowerMenu #teslaButton
+{
+    background-image: url("images/towers/tesla/tesla_blue.png");
+}
+
+#buildTowerMenu button:hover
+{ 
+   /*  width: 100px; height: 100px; */
+    background-color: green;
+}
+
+#towersHud
+{
+    display: flex;
+    justify-content: space-evenly;
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 65%;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#towersHud button
+{
+    margin: auto;
+
+    font-size: 18px;
+    border: 2px solid #AD235E;
+    border-radius: 100px;
+    background: #92c7eb;
+    
+    
+
+    background-size: contain;
+     background-position: center;
+    display: inline-block;
+     border: none;
+      padding: 20px;
+       width: 70px;
+        border-radius: 900px;
+         height: 70px;
+          transition: all 0.5s;
+           cursor: pointer;
+           background-repeat: no-repeat;
+}
+
+#hudCenter
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2%;
+
+}
+
+
+#hudSides
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2%;
+
+}
+#money
+{
+    
+    font-size: 30px;
+    color: darkorange;
+}
+#hp
+{
+    
+    font-size: 30px;
+    color: darkorchid;
+}
+#hudCenter #actualWave
+{
+    margin: auto;
+    font-size: 30px;
+}
+#hudCenter #time
+{
+    margin: auto;
+    font-size: 24px;
+}
